@@ -1,0 +1,20 @@
+Breakpoint 1 at 0x7e9: file factorization_org.c, line 1.
+Starting program: /home/yj/projects/sysp/week1/assignment/fact 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe478) at factorization_org.c:13
+13	int main(int argc, char* argv[]){
+17		printf("aX^2 + bX + c = 0\n");
+19		printf("a: ");
+20		scanf("%d", &i_a);
+22		printf("b: ");
+23		scanf("%d", &i_b);
+Undefined command: "8".  Try "help".
+25		printf("c: ");
+26		scanf("%d", &i_c);
+28		d_D = 4*i_a*i_c + i_b*i_b;
+$1 = 2
+$2 = 4.6355705384085816e-310
+29		if(d_D < 0){
+$3 = 128
+35			printf("Doesn't make sense\n");
+"finish" not meaningful in the outermost frame.

@@ -1,0 +1,23 @@
+set log file gdb.test.log
+set logging on
+set history filename gdb.test.history
+set history save on
+b 1
+run
+s
+s
+s
+p sum
+s
+whatis arr
+display arr
+s
+undisplay arr
+display
+undisplay
+s
+bt
+s
+info proc mappings
+s
+q

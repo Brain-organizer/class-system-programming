@@ -1,0 +1,46 @@
+Breakpoint 1 at 0x672: file test.c, line 1.
+Starting program: /home/yj/projects/sysp/lab2-1/test 
+
+Breakpoint 1, main () at test.c:3
+3	int main(){
+6		a=0;
+7		b=10;
+8		int sum = a+b;
+9		a=5;
+$1 = 10
+12		arr[sum] = 1;
+type = int [5]
+1: arr = {1431652048, 21845, 1431651680, 21845, -6992}
+13		return 0;
+1: arr = {1431652048, 21845, 1431651680, 21845, -6992}
+warning: bad display number at or near 'arr'
+1: arr = {1431652048, 21845, 1431651680, 21845, -6992}
+14	}
+#0  main () at test.c:14
+Warning:
+Cannot insert breakpoint 0.
+Cannot access memory at address 0x1
+
+0x00007fff00000001 in ?? ()
+process 32543
+Mapped address spaces:
+
+          Start Addr           End Addr       Size     Offset objfile
+      0x555555554000     0x555555555000     0x1000        0x0 /home/yj/projects/sysp/lab2-1/test
+      0x555555754000     0x555555755000     0x1000        0x0 /home/yj/projects/sysp/lab2-1/test
+      0x555555755000     0x555555756000     0x1000     0x1000 /home/yj/projects/sysp/lab2-1/test
+      0x7ffff79e2000     0x7ffff7bc9000   0x1e7000        0x0 /lib/x86_64-linux-gnu/libc-2.27.so
+      0x7ffff7bc9000     0x7ffff7dc9000   0x200000   0x1e7000 /lib/x86_64-linux-gnu/libc-2.27.so
+      0x7ffff7dc9000     0x7ffff7dcd000     0x4000   0x1e7000 /lib/x86_64-linux-gnu/libc-2.27.so
+      0x7ffff7dcd000     0x7ffff7dcf000     0x2000   0x1eb000 /lib/x86_64-linux-gnu/libc-2.27.so
+      0x7ffff7dcf000     0x7ffff7dd3000     0x4000        0x0 
+      0x7ffff7dd3000     0x7ffff7dfc000    0x29000        0x0 /lib/x86_64-linux-gnu/ld-2.27.so
+      0x7ffff7fed000     0x7ffff7fef000     0x2000        0x0 
+      0x7ffff7ff7000     0x7ffff7ffa000     0x3000        0x0 [vvar]
+      0x7ffff7ffa000     0x7ffff7ffc000     0x2000        0x0 [vdso]
+      0x7ffff7ffc000     0x7ffff7ffd000     0x1000    0x29000 /lib/x86_64-linux-gnu/ld-2.27.so
+      0x7ffff7ffd000     0x7ffff7ffe000     0x1000    0x2a000 /lib/x86_64-linux-gnu/ld-2.27.so
+      0x7ffff7ffe000     0x7ffff7fff000     0x1000        0x0 
+      0x7ffffffde000     0x7ffffffff000    0x21000        0x0 [stack]
+  0xffffffffff600000 0xffffffffff601000     0x1000        0x0 [vsyscall]
+Cannot find bounds of current function
